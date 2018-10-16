@@ -1,0 +1,10 @@
+{
+    "vendor": "HellFire's Company",
+    "largeIcon": "largeIcon.png",
+    "icon": "icon.png",
+    "main": "index.html",
+    "id": "com.example.app",
+    "title": "FirstApp",
+    "type": "web",
+    "version": "0.0.1"
+}
