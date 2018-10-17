@@ -2,18 +2,19 @@
  * 
  */
 
-function callSystemService()
+function callAuthSyno()
 {
-	webOS.service.request("luna://com.palm.systemservice",
+	console.log("ok");
+	webOS.service.request("luna://com.example.app.synoservice/",
         {
-            method:"time/getSystemTime",
-            parameters:{subscribe: true},
+            method:"aaa",
+            parameters:{},
+            subscribe: true,
             onSuccess: function (args) {
-				document.getElementById("lbl").innerHTML = args.localtime.day + "/" + args.localtime.month + "/" + args.localtime.year;
+				console.log(args);
             },
             onFailure: function (args) {
-            	document.getElementById("lbl").innerHTML = args;
+            	console.log(args);
             }
         });
-}
-
+};
